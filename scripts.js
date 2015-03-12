@@ -1,27 +1,32 @@
-google.load('visualization', '1.1', {
-	packages : ['bar']
+google.load('visualization', '1', {
+	packages : ['corechart']
 });
 google.setOnLoadCallback(drawChart);
 
 function drawChart() {
 
-	var data = new google.visualization.DataTable();
+	var data = new google.visualization.DataTable(oecdData);
 	data.addColumn('string', 'Country');
 	data.addColumn('number', '2009');
 	data.addColumn('number', '2010');
 
-	data.addRows([['Australia', 384, 276], ['Canada', 513, 400], ['United Kingdom', 1376, 1128], ['United States', 3015, 2883]]);
+	data.addRows(oecdData);
 
+// setting chart options
 	var options = {
-
-		chart: {
-          title: 'Motivation and Energy Level Throughout The Day',
-          subtitle: 'Based on a scale of 1 to 10'
-        },
-		colors : ['#F5A9BC', '#FA5882'],
-
-		width : 900,
+		colors : ['#F5A9BC', '#FA5882'], // color of my bars
+		// size of my chart
+        width : 900,
 		height : 600,
+		// title options
+		title : 'Official Development Aid 2009 vs. 2010',
+		titlePosition : 'out',
+		titleTextStyle : {
+			color : 'black',
+			fontName : 'Arial',
+			fontSize : 20
+		},
+		// hAxis options
 		hAxis : {
 			title : 'Country',
 
@@ -43,6 +48,7 @@ function drawChart() {
 				italic : false
 			}
 		},
+		// vAxis options
 		vAxis : {
 			title : 'Aid Commited',
 			format : '# mil',
@@ -61,7 +67,7 @@ function drawChart() {
 		}
 	};
 
-	var chart = new google.visualization.ColumnChart(document.getElementById('ex8'));
+	var chart = new google.visualization.ColumnChart(document.getElementById('ex0'));
 
 	chart.draw(data, options);
 }
