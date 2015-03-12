@@ -10,12 +10,14 @@ function drawChart() {
 	data.addColumn('number', '2009');
 	data.addColumn('number', '2010');
 
-	data.addRows([['Australia', 3848, 2761], ['Canada', 5131, 4000], ['United Kingdom', 13763, 11282], ['United States', 30154, 28831]]);
+	data.addRows([['Australia', 384, 276], ['Canada', 513, 400], ['United Kingdom', 1376, 1128], ['United States', 3015, 2883]]);
 
 	var options = {
 
-		title : 'Aid Committed for Developing Countries',
-		subtitle : 'Comparison of development assistance offered by four OECD countries',
+		chart: {
+          title: 'Motivation and Energy Level Throughout The Day',
+          subtitle: 'Based on a scale of 1 to 10'
+        },
 		colors : ['#F5A9BC', '#FA5882'],
 
 		width : 900,
@@ -42,7 +44,8 @@ function drawChart() {
 			}
 		},
 		vAxis : {
-			title : 'Aid Commited in Thousands',
+			title : 'Aid Commited',
+			format : '# mil',
 			textStyle : {
 				fontSize : 12,
 				color : '#424242',
@@ -58,7 +61,7 @@ function drawChart() {
 		}
 	};
 
-	var chart = new google.visualization.ColumnChart(document.getElementById('ex3'));
+	var chart = new google.visualization.ColumnChart(document.getElementById('ex8'));
 
 	chart.draw(data, options);
 }
