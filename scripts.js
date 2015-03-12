@@ -11,6 +11,15 @@ function drawChart() {
 	data.addColumn('number', '2010');
 
 	data.addRows(oecdData);
+	
+	//data.addColumn({type: 'string', role: 'annotation'});// annotation column
+	
+	//if (oecdData.Country == "United States"){
+	//oecdData.push("us");
+	//}else{
+	//oecdData.push("");
+	//}
+
 
 // setting chart options
 	var options = {
