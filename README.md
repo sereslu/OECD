@@ -1,13 +1,19 @@
-The data I chose was an excel spreadsheet of aid committed by OECD countries for developing countries in the years 2009 and 2010. I narrowed down the countries to 4 in particular that I was interested in studying.
+The data I chose was an excel spreadsheet of aid committed by OECD countries for developing countries in the years 2009 and 2010. I narrowed down the countries to 4 in particular that I was interested in studying (commonwealth countries).
 
-The chart begins at 0, as all column charts should. I chose the same color but in different intensity to show the relationship of the years. Both axes are labeled, and the vAxis units follow in the same format that I received the data in.
+Data accessible here: https://docs.google.com/spreadsheet/ccc?key=0AonYZs4MzlZbdGs3dFQzMVhlSXg0UEZqNE42cFltQlE#gid=0
 
-The chart I used was the basic column chart in Google Visualization
+The chart begins at 0, as all column charts should. I chose the same color but in different intensity for the bars to show the relationship of the years. Both axes are labeled. 
 
 Overall title style and position: Arial, size 20, regular, black
 The configuration options I used were:
 Colors of the bar: set to two shades of pink
 Width and height of the chart: set to 900 and 600
-Gridline count of the hAxis: set to 7
+Gridline count of the hAxis: set to 7, of the vAxis, set to 6
 Text style for both axes: Arial, size 12, regular, gray
 Title text style for both axes: Arial, size 16, regular, gray
+I also put in text styles for my annotation: Arial, size 10, gray
+
+Problems I ran into:
+
+-I wanted to position the annotation elsewhere, or to give it more room above and below it, but couldn't seem to find an option for that
+-I wanted to shift the chart styles into my css file by setting variables for the different options, but my chart stopped working after that
