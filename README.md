@@ -2,16 +2,22 @@ The data I chose was an excel spreadsheet of aid committed by OECD countries for
 
 Data accessible here: https://docs.google.com/spreadsheet/ccc?key=0AonYZs4MzlZbdGs3dFQzMVhlSXg0UEZqNE42cFltQlE#gid=0
 
-The chart begins at 0, as all column charts should. I chose the same color but in different intensity for the bars to show the relationship of the years. Both axes are labeled. 
+Picked a Google visualization called "material" charts.
 
-Overall title style and position: Arial, size 20, regular, black
-The configuration options I used were:
-Colors of the bar: set to two shades of pink
-Width and height of the chart: set to 900 and 600
-Gridline count of the hAxis: set to 7, of the vAxis, set to 6
-Text style for both axes: Arial, size 12, regular, gray
-Title text style for both axes: Arial, size 16, regular, gray
-I also put in text styles for my annotation: Arial, size 10, gray
+Luckily, the chart automatically set vAxis to begin at 0, as all column charts should. I chose the same pink color but in different intensity for the bars to show the relationship of the years (having different colors may lead the audience to think they are on different metrics)
+
+hAxis: the countries I chose
+vAxis: the amount of aid committed by each country
+
+Annotation: chose to annotate the country rather than the bar itself
+•	Overall title style and position: Arial, size 20, regular, black
+•	The configuration options I used were:
+•	Colors of the bar: set to two shades of pink
+•	Width and height of the chart: set to 900 and 600
+•	Gridline count of the vAxis, set to 6
+•	Text style for both axes: Arial, size 12, regular, gray
+•	Title text style for both axes: Arial, size 16, regular, gray
+•	Annotation text style: Arial, size 10, gray
 
 Problems I ran into:
 
